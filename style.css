@@ -95,6 +95,7 @@
     padding: 20px;
   }
   
+  aside article strong,
   section article strong {
     display: block;
     background-color: #dbc2a4;
@@ -102,7 +103,10 @@
     padding: 5px;
     margin: 15px 0 5px;
     font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   }
+  
   
   section ul {
     margin-left: 20px;
