@@ -6,16 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Papa Ours</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <header>
-    <img src="assets/img/405743640_24240151492295830_6184891343874948654_n.jpg" alt="Photo Papa Ours" />
-    <h1>Papa Ours</h1>
-    <h2> Fabien Le Fournis</h2>
-  </header>
+    <img src="assets/img/405743640_24240151492295830_6184891343874948654_n.jpg" alt="Photo de Papa Ours" />
+    <button class="toggle-dark" onclick="toggleDarkMode()">🌓</button>
 
+    <h1>Papa Ours</h1>
+    <h2>Fabien Le Fournis</h2>
+  </header>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+  
   <nav>
     <a href="https://goo.gl/maps/">29600 Plourin-Lès-Morlaix</a>
     <a href="mailto:lours@laforet.monde">redangel29@hotmail.fr</a>
@@ -23,42 +30,17 @@
   </nav>
 
   <main>
-    <aside>
-      <article>
-        <strong>À propos</strong>
-        <p>
-          Professionnel, polyvalent, avec une solide expérience du travail en sécurité privée et en bâtiment. Sérieux, autonome et à l'écoute, je cherche à rejoindre une équipe dynamique pour de nouveaux défis.
-        </p>
-      </article>
-
-      <article>
-        <strong>Langues parlées</strong>
-        <ul>
-          <li>Français : Courant</li>
-          <li>Anglais : Correct</li>
-        </ul>
-      </article>
-
-      <article>
-        <strong>Centres d'intérêt</strong>
-        <ul>
-          <li>Sports : Sports extrêmes, sports nautiques, sports de combats (pratiques diverses)</li>
-          <li>Informatique : Code, Jeux.</li>
-        </ul>
-      </article>
-    </aside>
-
     <section>
       <article>
         <strong>Expériences professionnelles</strong>
         <ul>
           <li>
             <strong>Agent de sécurité</strong> de 2008 à 2018<br />
-            Maitre Chien, ADS, SSIAP 1, principalement en évennementiel
+            Maître chien, ADS, SSIAP 1, principalement en événementiel
           </li>
           <li>
             <strong>Cheministe</strong> – Entreprise Cheminées Picard puis Fusionys de 2018 à 2023<br />
-            Installation de cheminées, de poêles à bois, technicien SAV, entretiens et ramonages.
+            Installation de cheminées, poêles à bois, technicien SAV, entretiens et ramonages.
           </li>
         </ul>
       </article>
@@ -66,9 +48,9 @@
       <article>
         <strong>Diplômes et formations</strong>
         <ul>
-          <li>Certificat de Capacité : Educateur/Coach Canin</li>
-          <li>Maitre Chien en Sécurité Privée</li>
-          <li>Mention Complémentaire Sécurité Civile et d’Entreprise (SCE)</li>
+          <li>Certificat de capacité : Éducateur / Coach canin</li>
+          <li>Maître chien en sécurité privée</li>
+          <li>Mention complémentaire Sécurité Civile et d’Entreprise (SCE)</li>
           <li>CAP Agent de Prévention et de Sécurité (APS)</li>
         </ul>
       </article>
@@ -84,14 +66,40 @@
         </ul>
       </article>
     </section>
+
+    <aside>
+      <article>
+        <strong>À propos</strong>
+        <p>
+          Professionnel, polyvalent, avec une solide expérience en sécurité privée et en bâtiment. Sérieux, autonome et à l'écoute, je cherche à rejoindre une équipe dynamique pour de nouveaux défis.
+        </p>
+      </article>
+
+      <article>
+        <strong>Langues parlées</strong>
+        <ul>
+          <li>Français : courant</li>
+          <li>Anglais : correct</li>
+        </ul>
+      </article>
+
+      <article>
+        <strong>Centres d'intérêt</strong>
+        <ul>
+          <li>Sports : extrêmes, nautiques, sports de combat</li>
+          <li>Informatique : code, jeux</li>
+        </ul>
+      </article>
+    </aside>
   </main>
 
   <footer>
+    <a href="cv.pdf" class="download-btn" target="_blank">📄 Télécharger en PDF</a>
     <a href="https://www.facebook.com/papa.ours.2615?locale=fr_FR" target="_blank" rel="noopener noreferrer">
-      <img src="assets/img/facebook.png" alt="Facebook" />
+      <img src="assets/img/facebook.png" alt="Lien vers Facebook de Papa Ours" />
     </a>
     <a href="https://www.instagram.com/papaours_gaming/" target="_blank" rel="noopener noreferrer">
-      <img src="assets/img/instagram.png" alt="Instagram" />
+      <img src="assets/img/instagram.png" alt="Lien vers Instagram de Papa Ours" />
     </a>
     <p>&copy; 2024 Papa Ours</p>
   </footer>
